@@ -1,6 +1,6 @@
 {
-  "name": "boilerplate-react",
-  "version": "0.1.0",
+  "name": "yad-dailyreport",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
@@ -28,7 +28,14 @@
     "eject": "craco eject",
     "lint": "eslint --fix --ext js,ts,tsx .",
     "prettier": "prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "ut": "craco test src/app/pages/MasterExclusion/__tests__/MasterExclusionForm.test.js --collectCoverageFrom=src/app/pages/MasterExclusion/MasterExclusionForm.tsx --watch --coverage"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": [
