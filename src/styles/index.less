@@ -1,0 +1,45 @@
+@import '~antd/dist/antd.less';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Custom color for basic design
+@menu-color: #343a40;
+@menu-color-active: #636363;
+@primary-color-bd: #0085fc;
+
+// Custom theme for antd: https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less
+@primary-color: @primary-color-bd;
+@menu-dark-bg: @menu-color;
+@menu-dark-inline-submenu-bg: @menu-color;
+@menu-dark-item-active-bg: @menu-color-active;
+@layout-sider-background: @menu-color;
+@card-head-background: #f0f1f2;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+*::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+  border-radius: 20px;
+}
+
